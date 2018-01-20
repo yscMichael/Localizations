@@ -14,7 +14,7 @@
 		113B2704200F64330071F91B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113B2703200F64330071F91B /* Assets.xcassets */; };
 		113B2707200F64330071F91B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 113B2705200F64330071F91B /* LaunchScreen.storyboard */; };
 		113B2718200F68650071F91B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 113B271A200F68650071F91B /* InfoPlist.strings */; };
-		11657EBD2013536700CA4116 /* language.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 11657EBC2013536700CA4116 /* language.bundle */; };
+		11657EFD20137AF100CA4116 /* language.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 11657EFC20137AF100CA4116 /* language.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +32,8 @@
 		113B270F200F65820071F91B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		113B2719200F68650071F91B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		113B271B200F68B90071F91B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		11657EBC2013536700CA4116 /* language.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = language.bundle; sourceTree = "<group>"; };
 		11657ED32013725B00CA4116 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		11657EFC20137AF100CA4116 /* language.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = language.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,6 @@
 				113B26FD200F64330071F91B /* ViewController.h */,
 				113B26FE200F64330071F91B /* ViewController.m */,
 				11657EF2201378F600CA4116 /* main */,
-				11657EBC2013536700CA4116 /* language.bundle */,
 				11657ED22013725B00CA4116 /* other */,
 			);
 			path = Localizations;
@@ -80,6 +79,7 @@
 		11657ED22013725B00CA4116 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				11657EFC20137AF100CA4116 /* language.bundle */,
 				113B271A200F68650071F91B /* InfoPlist.strings */,
 				113B2703200F64330071F91B /* Assets.xcassets */,
 				113B2708200F64330071F91B /* Info.plist */,
@@ -160,7 +160,7 @@
 				113B2707200F64330071F91B /* LaunchScreen.storyboard in Resources */,
 				113B2704200F64330071F91B /* Assets.xcassets in Resources */,
 				113B2702200F64330071F91B /* Main.storyboard in Resources */,
-				11657EBD2013536700CA4116 /* language.bundle in Resources */,
+				11657EFD20137AF100CA4116 /* language.bundle in Resources */,
 				113B2718200F68650071F91B /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
