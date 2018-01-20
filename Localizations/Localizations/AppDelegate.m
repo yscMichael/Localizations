@@ -17,17 +17,35 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-
-
-
-
-
-
+    [self systemLanguage];
     return YES;
 }
 
+#pragma mark - 系统语言
+- (void)systemLanguage
+{
+    //获取当前设备语言
+    NSUserDefaults *defaultUser = [NSUserDefaults standardUserDefaults];
+    NSArray *appLanguages = [defaultUser objectForKey:@"AppleLanguages"];
+    NSString *languageName = [appLanguages objectAtIndex:0];
+    NSString *languageType;
 
+    if ([languageName containsString:@"zh-Hans"])
+    {//中文
+        languageType = @"zh-Hans";
+    }
+    else if([languageName containsString:@"en"])
+    {
+        languageType = @"en";
+    }
+    else
+    {
+        languageType = @"zh-Hans";
+    }
 
+    [[NSUserDefaults standardUserDefaults] setObject:languageType forKey:AppleLanguage];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
