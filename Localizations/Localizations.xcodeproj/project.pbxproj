@@ -25,9 +25,9 @@
 		113B26FD200F64330071F91B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		113B26FE200F64330071F91B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		113B2701200F64330071F91B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		113B2703200F64330071F91B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		113B2703200F64330071F91B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		113B2706200F64330071F91B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		113B2708200F64330071F91B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		113B2708200F64330071F91B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		113B270E200F65820071F91B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		113B270F200F65820071F91B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		113B2719200F68650071F91B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -71,31 +71,31 @@
 				113B26FB200F64330071F91B /* AppDelegate.m */,
 				113B26FD200F64330071F91B /* ViewController.h */,
 				113B26FE200F64330071F91B /* ViewController.m */,
-				113B2700200F64330071F91B /* Main.storyboard */,
-				113B2703200F64330071F91B /* Assets.xcassets */,
-				113B2705200F64330071F91B /* LaunchScreen.storyboard */,
+				11657EF2201378F600CA4116 /* main */,
 				11657EBC2013536700CA4116 /* language.bundle */,
 				11657ED22013725B00CA4116 /* other */,
-				113B2708200F64330071F91B /* Info.plist */,
-				113B26F7200F64330071F91B /* Supporting Files */,
 			);
 			path = Localizations;
-			sourceTree = "<group>";
-		};
-		113B26F7200F64330071F91B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				113B26F8200F64330071F91B /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		11657ED22013725B00CA4116 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				113B2703200F64330071F91B /* Assets.xcassets */,
+				113B2708200F64330071F91B /* Info.plist */,
 				11657ED32013725B00CA4116 /* PrefixHeader.pch */,
 			);
 			path = other;
+			sourceTree = "<group>";
+		};
+		11657EF2201378F600CA4116 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				113B26F8200F64330071F91B /* main.m */,
+				113B2700200F64330071F91B /* Main.storyboard */,
+				113B2705200F64330071F91B /* LaunchScreen.storyboard */,
+			);
+			name = main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
