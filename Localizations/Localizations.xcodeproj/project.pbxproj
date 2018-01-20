@@ -50,7 +50,6 @@
 		113B26EB200F64330071F91B = {
 			isa = PBXGroup;
 			children = (
-				113B271A200F68650071F91B /* InfoPlist.strings */,
 				113B26F6200F64330071F91B /* Localizations */,
 				113B26F5200F64330071F91B /* Products */,
 			);
@@ -81,6 +80,7 @@
 		11657ED22013725B00CA4116 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				113B271A200F68650071F91B /* InfoPlist.strings */,
 				113B2703200F64330071F91B /* Assets.xcassets */,
 				113B2708200F64330071F91B /* Info.plist */,
 				11657ED32013725B00CA4116 /* PrefixHeader.pch */,
@@ -206,6 +206,7 @@
 				113B271B200F68B90071F91B /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
