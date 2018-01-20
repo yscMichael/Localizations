@@ -12,6 +12,9 @@
 #define AppLocalizableString(key,tableName) \
         [[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:[[NSUserDefaults standardUserDefaults] objectForKey:@"AppleLanguage"] ofType:@"lproj"]] localizedStringForKey:key value:nil table:tableName]
 
+#define AppBundleLocalizableString(key,tableName,bundleName) \
+        [[NSBundle bundleWithPath:[[[NSBundle mainBundle] pathForResource:bundleName ofType:@"bundle"] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.lproj",[[NSUserDefaults standardUserDefaults] objectForKey:@"AppleLanguage"]]]] localizedStringForKey:key value:@"" table:tableName]
+
 #define AppleLanguage @"AppleLanguage"
 
 #endif /* PrefixHeader_pch */

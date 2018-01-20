@@ -30,14 +30,16 @@
 {
     UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(0, 100, 100, 50)];
     button.backgroundColor = [UIColor blueColor];
-    NSString *title = AppLocalizableString(@"ButtonTitle",@"Localizable");
+    //NSString *title = AppLocalizableString(@"ButtonTitle",@"Localizable");
+    NSString *title = AppBundleLocalizableString(@"ButtonTitle", @"Localizable", @"language");
     [button setTitle:title forState:UIControlStateNormal];
     [button addTarget:self action:@selector(changeLanguage:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
 
     UIButton *languageButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 100, 50)];
     languageButton.backgroundColor = [UIColor blueColor];
-    NSString *language = AppLocalizableString(@"Language",@"Localizable");
+    //NSString *language = AppLocalizableString(@"Language",@"Localizable");
+    NSString *language = AppBundleLocalizableString(@"Language", @"Localizable", @"language");
     [languageButton setTitle:language forState:UIControlStateNormal];
     [languageButton addTarget:self action:@selector(changeLanguage:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:languageButton];
