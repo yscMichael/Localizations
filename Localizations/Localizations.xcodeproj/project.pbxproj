@@ -79,11 +79,11 @@
 		11657ED22013725B00CA4116 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				113B2708200F64330071F91B /* Info.plist */,
+				11657ED32013725B00CA4116 /* PrefixHeader.pch */,
 				11657EFC20137AF100CA4116 /* language.bundle */,
 				113B271A200F68650071F91B /* InfoPlist.strings */,
 				113B2703200F64330071F91B /* Assets.xcassets */,
-				113B2708200F64330071F91B /* Info.plist */,
-				11657ED32013725B00CA4116 /* PrefixHeader.pch */,
 			);
 			path = other;
 			sourceTree = "<group>";
